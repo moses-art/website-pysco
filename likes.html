@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/social logo.png" type="image/x-icon">
+    <title>Circles</title>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="fontawesome/all.min.css" type="text/css" /> -->
+    <!-- <script src="fontawesome/all.min.js"></script> -->
+    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+    <!-- <script src="script/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script/index.js"></script>
+</head>
+
+<body class="all">
+    <!-- ############ navbar ############# -->
+    <nav class="container-div navbar navbar-expand-sm bg-light navbar-light fixed-top" id="nav">
+        <div class="">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="images/social logo.png" alt="site logo">
+                Circles
+            </a>
+        </div>
+        <div class="search-div">
+            <input type="text" class="search-input" placeholder="Search">
+            <img src="images/search.svg" alt="" class="icon search-icon" />
+            <!-- <span class="fa fa-search "></span> -->
+        </div>
+
+        <div class="nav-notif">
+            <div class="notifications">
+                <img src="images/moon.svg" alt="" class="icon" id="svg-moon" />
+                <img src="images/sun.svg" alt="" class="icon hide-icon" id="svg-sun" />
+
+                <!-- <span class="fa fa-bell fa-xl notif" id="fa-bell"></span> -->
+                <img src="images/bell.svg" alt="" class="icon" />
+                <span class="badge bg-danger" id="badge-icon">4</span>
+            </div>
+
+            <div class="dropdown dropstart dropdown-menu-start">
+                <img src="images/profile-1.jpg" alt="img pic" class="rounded-pill dropdown-toggle profile-img"
+                    data-bs-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                        </hr>
+                    </li>
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                        </hr>
+                    </li>
+                    <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                        </hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ############ navbar ############# -->
+
+
+
+    <!-- ############ MAIN ############# -->
+    <div class="main">
+        <div class="container-div content">
+
+            <!-- ############ LEFT ############# -->
+            <div class="body leftside">
+                <div class="profile-head p-card">
+                    <img src="images/profile-1.jpg" alt="img pic" class="profile-img" />
+                    <div class="profile-detail">
+                        <span class="p-name">Jane Doe</span>
+                        <span class="p-uname">@janedoe</span>
+                    </div>
+                </div>
+            
+                <div class="sidebar-menu p-card">
+                    <a href="index.html" class="a-link">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-home" id="fa-home"></span> -->
+                            <img src="images/home.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Home</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="explore.html" class="a-link">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-compass" id="fa-explore"></span> -->
+                            <img src="images/compass.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="likes.html" class="a-link">
+                        <div class="menu-item active-link">
+                            <!-- <span class="icon fa fa-heart" id="fa-like"></span> -->
+                            <img src="images/heart.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Likes</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="#" class="a-link" id="Messages">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-envelope" id="fa-message"></span> -->
+                            <img src="images/envelope.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Messages</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="friends.html" class="a-link">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-users" id="fa-friend"></span> -->
+                            <img src="images/users.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Friends</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="#" class="a-link">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-comment" id="fa-request"></span> -->
+                            <img src="images/request.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Request</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="#" class="a-link" id="themes">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-palette" id="fa-palette"></span> -->
+                            <img src="images/palette.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Themes</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <div class="menu-item" data-bs-toggle="offcanvas" data-bs-target="#setting-canvas">
+                        <!-- <span class="icon fa fa-cog" id="fa-settings"></span> -->
+                        <img src="images/settings.svg" alt="" class="icon" />
+                        <div class="link-item">
+                            <a href="#" class="a-link">Settings</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <button type="button" class="btn btn-primary">POST</button>
+            </div>
+            <!-- ############ MAIN ############# -->
+
+
+            <!-- ############ MIDDLE ############# -->
+            <div class="body middle">
+
+                <div class="create-post p-card" style="margin-top: 0px">
+                    <div class="profile-pic">
+                        <img src="images/profile-1.jpg" alt="pic" class="avatarImg">
+                        <span class="p-uname">@janedoe</span>
+                    </div>
+                    <input type="text" placeholder="What's on your mind?" class="post-input" />
+                    <button type="button" class="btn btn-primary">Post</button>
+                </div>
+
+                <div class="feeds">
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-3.jpg" alt="pic" class="avatarImg">
+                            <span class="p-name">@janedoe</span>
+                            <span class="feed-date p-name">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-3.jpg" alt="post img" class="post-img" />
+                            <p class="p-name" data-bs-toggle="modal" data-bs-target="#post-modal">
+                                🥗 Looking to boost your energy and feel great? Try adding more colorful fruits and
+                                veggies to your diet! They’re packed
+                                with essential nutrients and antioxidants that support overall health. 🌈💚 Make your
+                                plate vibrant and delicious!
+                                What’s your favorite healthy meal? 🍎🥦 #HealthyEating #NutritionTips #FeelGoodFood
+                            </p>
+                        </div>
+                        <div class="feed-actions p-name">
+                            <img src="images/heart-filled.svg" alt="like icon" /> 12
+                            <img src="images/comments.svg" alt="like icon" /> 24
+                        </div>
+                    </div>
+
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-7.jpg" alt="pic" class="avatarImg">
+                            <span class="p-name">@janedoe</span>
+                            <span class="feed-date p-name">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-6.jpg" alt="post img" class="post-img" />
+                            <p class="p-name" data-bs-toggle="modal" data-bs-target="#post-modal">
+                                💡 Tech Tip Tuesday is here! Did you know that regularly updating your software helps
+                                protect against security threats
+                                and bugs? Keep your devices running smoothly and securely by checking for updates. Stay
+                                safe and tech-savvy! 📲🔒
+                                #TechTipTuesday #StaySecure #DigitalSafety
+                            </p>
+                        </div>
+                        <div class="feed-actions p-name">
+                            <img src="images/heart-filled.svg" alt="like icon" /> 12
+                            <img src="images/comments.svg" alt="like icon" /> 24
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ############ MIDDLE ############# -->
+
+
+
+            <!-- ############ RIGHT ############# -->
+            <div class="body rightside">
+                <div class="p-card msg-div message-div-content" id="">
+                    <div class="msg-header">
+                        <img src="images/activity.svg" alt="activities" />
+                        <span class="p-name">Activities</span>
+                    </div>
+            
+            
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#messages">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#requests">Requests</a>
+                        </li>
+                    </ul>
+            
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="messages">
+                            <h5 class="p-name">Your messages</h5>
+                            <div class="msg-profile">
+                                <img src="images/profile-11.jpg" alt="" class="avatarImg">
+                                <div class="msg-content">
+                                    <span class="p-name">@Isabella</span>
+                                    <div class="p-name">
+                                        Hello how are you doing today ?
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="msg-profile">
+                                <img src="images/profile-12.jpg" alt="" class="avatarImg">
+                                <div class="msg-content">
+                                    <span class="p-name">@Harry-p</span>
+                                    <div class="p-name">
+                                        Just saying hi!
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="msg-profile">
+                                <img src="images/profile-13.jpg" alt="" class="avatarImg">
+                                <div class="msg-content">
+                                    <span class="p-name">@Bekky</span>
+                                    <div class="p-name">
+                                        I miss you 😀😀
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="msg-profile">
+                                <img src="images/profile-14.jpg" alt="" class="avatarImg">
+                                <div class="msg-content">
+                                    <span class="p-name">@Peter</span>
+                                    <div class="p-name">
+                                        Bored like hell!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="tab-pane container fade" id="requests">
+                            <h5 class="p-name">Friends requests</h5>
+            
+                            <div class="request-div">
+                                <div class="req-profile">
+                                    <img src="images/profile-17.jpg" alt="" class="avatarImg">
+                                    <span class="p-name">@joeboy</span>
+                                </div>
+            
+                                <div class="req-action">
+                                    <button type="button" class="btn btn-primary">Accept</button>
+            
+                                    <button type="button" class="btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+            
+                            <div class="request-div">
+                                <div class="req-profile">
+                                    <img src="images/profile-16.jpg" alt="" class="avatarImg">
+                                    <span class="p-name">@Kunle</span>
+                                </div>
+            
+                                <div class="req-action">
+                                    <button type="button" class="btn btn-primary">Accept</button>
+            
+                                    <button type="button" class="btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+            
+                            <div class="request-div">
+                                <div class="req-profile">
+                                    <img src="images/profile-19.jpg" alt="" class="avatarImg">
+                                    <span class="p-name">@D-trump</span>
+                                </div>
+            
+                                <div class="req-action">
+                                    <button type="button" class="btn btn-primary">Accept</button>
+            
+                                    <button type="button" class="btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <!-- FRIENDS SECTION -->
+                <div class="p-card msg-div friend-div message-div-content">
+                    <div class="msg-header">
+                        <img src="images/users.svg" alt="user icon">
+                        <span class="p-name">Friends</span>
+                    </div>
+            
+                    <div class="friend-search post-input">
+                        <span class="fa fa-search"></span>
+                        <input type="text" placeholder="Search" class="post-input" />
+                    </div>
+            
+                    <div class="msg-profile">
+                        <img src="images/profile-17.jpg" alt="" class="avatarImg">
+                        <div class="msg-content">
+                            <span class="p-name">@big-sista</span>
+                            <div class="p-name"> 11 mutual friends </div>
+                        </div>
+                    </div>
+            
+                    <div class="msg-profile">
+                        <img src="images/profile-18.jpg" alt="" class="avatarImg">
+                        <div class="msg-content">
+                            <span class="p-name">@eze-martin</span>
+                            <div class="p-name"> 10 mutual friends </div>
+                        </div>
+                    </div>
+            
+                    <div class="msg-profile">
+                        <img src="images/profile-19.jpg" alt="" class="avatarImg">
+                        <div class="msg-content">
+                            <span class="p-name">@akin bola</span>
+                            <div class="p-name"> 7 mutual friends </div>
+                        </div>
+                    </div>
+            
+                    <div class="msg-profile">
+                        <img src="images/profile-20.jpg" alt="" class="avatarImg">
+                        <div class="msg-content">
+                            <span class="p-name">@madonna</span>
+                            <div class="p-name"> 4 mutual friends </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </div>
+            <!-- ############ RIGHT ############# -->
+        </div>
+    </div>
+    <!-- ############ MAIN ############# -->
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="post-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Viewing Post</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="feed-content">
+                        <img src="images/feed-1.jpg" alt="post img" class="post-img" />
+                        <p>
+                            🌍 Ready for your next adventure? 🌟 Discover hidden gems and breathtaking landscapes
+                            that are just waiting to be
+                            explored. From serene beaches to towering mountains, the world is full of wonders! Share
+                            your favorite travel
+                            destinations and let’s inspire each other to explore new horizons. 🏞️✨ #TravelGoals
+                            #Wanderlust #ExploreTheWorld
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="post-img-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Viewing Post Photo</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="feed-content">
+                        <img src="images/feed-1.jpg" alt="post img" class="post-img" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+
+
+
+
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-end" id="setting-canvas">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Settings</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+        </div>
+    </div>
+    <!-- Offcanvas Sidebar -->
+
+
+</body>
+
+</html>

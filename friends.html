@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/social logo.png" type="image/x-icon">
+    <title>Circles</title>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="fontawesome/all.min.css" type="text/css" /> -->
+    <!-- <script src="fontawesome/all.min.js"></script> -->
+    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+    <!-- <script src="script/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script/index.js"></script>
+</head>
+
+<body class="all">
+    <!-- ############ navbar ############# -->
+    <nav class="container-div navbar navbar-expand-sm bg-light navbar-light fixed-top" id="nav">
+        <div class="">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="images/social logo.png" alt="site logo">
+                Circles
+            </a>
+        </div>
+        <div class="search-div">
+            <input type="text" class="search-input" placeholder="Search">
+            <img src="images/search.svg" alt="" class="icon search-icon" />
+            <!-- <span class="fa fa-search "></span> -->
+        </div>
+
+        <div class="nav-notif">
+            <div class="notifications">
+                <img src="images/moon.svg" alt="" class="icon" id="svg-moon" />
+                <img src="images/sun.svg" alt="" class="icon hide-icon" id="svg-sun" />
+
+                <!-- <span class="fa fa-bell fa-xl notif" id="fa-bell"></span> -->
+                <img src="images/bell.svg" alt="" class="icon" />
+                <span class="badge bg-danger" id="badge-icon">4</span>
+            </div>
+
+            <div class="dropdown dropstart dropdown-menu-start">
+                <img src="images/profile-1.jpg" alt="img pic" class="rounded-pill dropdown-toggle profile-img"
+                    data-bs-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                        </hr>
+                    </li>
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                        </hr>
+                    </li>
+                    <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                        </hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ############ navbar ############# -->
+
+
+    <!-- ############ MAIN ############# -->
+    <div class="main">
+        <div class="container-div content">
+
+            <!-- ############ LEFT ############# -->
+            <div class="body leftside">
+                <div class="profile-head p-card">
+                    <img src="images/profile-1.jpg" alt="img pic" class="profile-img" />
+                    <div class="profile-detail">
+                        <span class="p-name">Jane Doe</span>
+                        <span class="p-uname">@janedoe</span>
+                    </div>
+                </div>
+            
+                <div class="sidebar-menu p-card">
+                    <a href="index.html" class="a-link">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-home" id="fa-home"></span> -->
+                            <img src="images/home.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Home</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="explore.html" class="a-link">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-compass" id="fa-explore"></span> -->
+                            <img src="images/compass.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="likes.html" class="a-link">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-heart" id="fa-like"></span> -->
+                            <img src="images/heart.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Likes</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="#" class="a-link" id="Messages">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-envelope" id="fa-message"></span> -->
+                            <img src="images/envelope.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Messages</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="friends.html" class="a-link">
+                        <div class="menu-item active-link">
+                            <!-- <span class="icon fa fa-users" id="fa-friend"></span> -->
+                            <img src="images/users.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Friends</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="#" class="a-link">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-comment" id="fa-request"></span> -->
+                            <img src="images/request.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Request</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <a href="#" class="a-link" id="themes">
+                        <div class="menu-item">
+                            <!-- <span class="icon fa fa-palette" id="fa-palette"></span> -->
+                            <img src="images/palette.svg" alt="" class="icon" />
+                            <div class="link-item">
+                                <span class="a-link">Themes</span>
+                            </div>
+                        </div>
+                    </a>
+            
+                    <div class="menu-item" data-bs-toggle="offcanvas" data-bs-target="#setting-canvas">
+                        <!-- <span class="icon fa fa-cog" id="fa-settings"></span> -->
+                        <img src="images/settings.svg" alt="" class="icon" />
+                        <div class="link-item">
+                            <a href="#" class="a-link">Settings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ############ MAIN ############# -->
+
+
+            <!-- ############ MIDDLE ############# -->
+            <div class="body middle" style="width: 100%;">
+
+                <h3 style="margin-bottom: 2rem; color:var(--color-primary)"> Suggested Friends </h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-card">
+                            <img class="card-img-top" src="images/profile-6.jpg" alt="Card image"
+                                style="max-height: 14vh!important; object-fit: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title p-name">John Doe</h4>
+                                <p class="card-text p-name">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-card">
+                            <img class="card-img-top" src="images/profile-7.jpg" alt="Card image"
+                                style="max-height: 14vh!important; object-fit: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title p-name">John Doe</h4>
+                                <p class="card-text p-name">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-card">
+                            <img class="card-img-top" src="images/profile-8.jpg" alt="Card image"
+                                style="max-height: 14vh!important; object-fit: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title p-name">John Doe</h4>
+                                <p class="card-text p-name">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-card">
+                            <img class="card-img-top" src="images/profile-9.jpg" alt="Card image"
+                                style="max-height: 14vh!important; object-fit: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title p-name">John Doe</h4>
+                                <p class="card-text p-name">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-card">
+                            <img class="card-img-top" src="images/profile-10.jpg" alt="Card image"
+                                style="max-height: 14vh!important; object-fit: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title p-name">John Doe</h4>
+                                <p class="card-text p-name">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card p-card">
+                            <img class="card-img-top" src="images/profile-.jpg" alt="Card image"
+                                style="max-height: 14vh!important; object-fit: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title p-name">John Doe</h4>
+                                <p class="card-text p-name">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-end" id="setting-canvas">
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Settings</h1>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Some text lorem ipsum.</p>
+        <button class="btn btn-secondary" type="button">A Button</button>
+    </div>
+</div>
+<!-- Offcanvas Sidebar -->
+
+</body>
+
+</html>
